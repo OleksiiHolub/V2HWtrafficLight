@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,31 +14,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="V2HWtrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmY-kD-GBA">
-                                <rect key="frame" x="144" y="80" width="126" height="126"/>
+                                <rect key="frame" x="136" y="36" width="103" height="102.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="CsT-CV-TKu"/>
-                                    <constraint firstAttribute="height" constant="126" id="SR0-IM-ARn"/>
+                                    <constraint firstAttribute="width" secondItem="tmY-kD-GBA" secondAttribute="height" multiplier="1:1" id="3eR-u4-3pU"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8l-vZ-rg1">
-                                <rect key="frame" x="144" y="247" width="126" height="126"/>
+                                <rect key="frame" x="136" y="179.5" width="103" height="103"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="0DK-5j-iGX"/>
-                                    <constraint firstAttribute="width" constant="126" id="Y4x-1i-FTt"/>
+                                    <constraint firstAttribute="width" secondItem="e8l-vZ-rg1" secondAttribute="height" multiplier="1:1" id="Fmn-VL-zbl"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d33-bW-klI">
-                                <rect key="frame" x="144" y="410" width="126" height="126"/>
+                                <rect key="frame" x="136" y="319.5" width="103" height="102.5"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="Ed6-7p-pyb"/>
-                                    <constraint firstAttribute="height" constant="126" id="tkw-KI-H4x"/>
+                                    <constraint firstAttribute="width" secondItem="d33-bW-klI" secondAttribute="height" multiplier="1:1" id="6dJ-L7-773"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgz-MM-vuH">
@@ -63,11 +60,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
+                            <constraint firstItem="e8l-vZ-rg1" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="63:409" id="6ci-Vo-0WJ"/>
                             <constraint firstItem="d33-bW-klI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ob2-U1-m4v"/>
                             <constraint firstItem="e8l-vZ-rg1" firstAttribute="top" secondItem="tmY-kD-GBA" secondAttribute="bottom" constant="41" id="SoV-Yp-ejx"/>
                             <constraint firstItem="d33-bW-klI" firstAttribute="top" secondItem="e8l-vZ-rg1" secondAttribute="bottom" constant="37" id="hDw-gh-ipy"/>
+                            <constraint firstItem="tmY-kD-GBA" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="63:409" id="le5-Kw-r4v"/>
                             <constraint firstItem="tmY-kD-GBA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="mHm-sD-Rd9"/>
                             <constraint firstItem="e8l-vZ-rg1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oCG-6C-cUo"/>
+                            <constraint firstItem="d33-bW-klI" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="63:409" id="thH-yJ-904"/>
                             <constraint firstItem="tmY-kD-GBA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vd0-4K-O8J"/>
                         </constraints>
                     </view>

@@ -38,9 +38,8 @@
                                     <constraint firstAttribute="width" secondItem="d33-bW-klI" secondAttribute="height" multiplier="1:1" id="6dJ-L7-773"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgz-MM-vuH">
-                                <rect key="frame" x="111" y="787" width="192" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgz-MM-vuH">
+                                <rect key="frame" x="109" y="508.5" width="157" height="48.5"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                 <state key="normal" title="Button"/>
@@ -55,6 +54,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQV-7V-bSp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -62,15 +64,24 @@
                         <constraints>
                             <constraint firstItem="e8l-vZ-rg1" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="63:409" id="6ci-Vo-0WJ"/>
                             <constraint firstItem="d33-bW-klI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ob2-U1-m4v"/>
+                            <constraint firstItem="Wgz-MM-vuH" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="96:409" id="OvP-iw-u2o"/>
                             <constraint firstItem="e8l-vZ-rg1" firstAttribute="top" secondItem="tmY-kD-GBA" secondAttribute="bottom" constant="41" id="SoV-Yp-ejx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgz-MM-vuH" secondAttribute="bottom" constant="110" id="a0K-P3-zIf"/>
                             <constraint firstItem="d33-bW-klI" firstAttribute="top" secondItem="e8l-vZ-rg1" secondAttribute="bottom" constant="37" id="hDw-gh-ipy"/>
                             <constraint firstItem="tmY-kD-GBA" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="63:409" id="le5-Kw-r4v"/>
                             <constraint firstItem="tmY-kD-GBA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="mHm-sD-Rd9"/>
                             <constraint firstItem="e8l-vZ-rg1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oCG-6C-cUo"/>
+                            <constraint firstItem="Wgz-MM-vuH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rBB-au-e43"/>
                             <constraint firstItem="d33-bW-klI" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="63:409" id="thH-yJ-904"/>
                             <constraint firstItem="tmY-kD-GBA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vd0-4K-O8J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="d33-bW-klI" id="DyW-ud-zo0"/>
+                        <outlet property="redLight" destination="tmY-kD-GBA" id="OQq-Ax-owU"/>
+                        <outlet property="startButton" destination="Wgz-MM-vuH" id="Tfo-jO-wPH"/>
+                        <outlet property="yellowLight" destination="e8l-vZ-rg1" id="DIV-Ig-D9h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
